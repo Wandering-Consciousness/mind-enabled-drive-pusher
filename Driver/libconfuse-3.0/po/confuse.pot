@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Martin Hedenfalk
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: confuse 3.0\n"
+"Report-Msgid-Bugs-To: https://github.com/martinh/libconfuse/issues\n"
+"POT-Creation-Date: 2016-03-03 01:12+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/confuse.c:197 src/confuse.c:218
+#, c-format
+msgid "no such option '%s'"
+msgstr ""
+
+#: src/confuse.c:552
+#, c-format
+msgid "duplicate option '%s' not allowed"
+msgstr ""
+
+#: src/confuse.c:703
+#, c-format
+msgid "found duplicate title '%s'"
+msgstr ""
+
+#: src/confuse.c:729
+#, c-format
+msgid "invalid integer value for option '%s'"
+msgstr ""
+
+#: src/confuse.c:733
+#, c-format
+msgid "integer value for option '%s' is out of range"
+msgstr ""
+
+#: src/confuse.c:751
+#, c-format
+msgid "invalid floating point value for option '%s'"
+msgstr ""
+
+#: src/confuse.c:755
+#, c-format
+msgid "floating point value for option '%s' is out of range"
+msgstr ""
+
+#: src/confuse.c:837
+#, c-format
+msgid "invalid boolean value for option '%s'"
+msgstr ""
+
+#: src/confuse.c:1015
+#, c-format
+msgid "dropping deprecated configuration option '%s'"
+msgstr ""
+
+#: src/confuse.c:1018
+#, c-format
+msgid "found deprecated option '%s', please update configuration file."
+msgstr ""
+
+#: src/confuse.c:1047
+msgid "premature end of file"
+msgstr ""
+
+#: src/confuse.c:1064
+msgid "unexpected closing brace"
+msgstr ""
+
+#: src/confuse.c:1070 src/confuse.c:1130 src/confuse.c:1148 src/confuse.c:1170
+#, c-format
+msgid "unexpected token '%s'"
+msgstr ""
+
+#: src/confuse.c:1096
+#, c-format
+msgid "attempt to append to non-list option '%s'"
+msgstr ""
+
+#: src/confuse.c:1109
+#, c-format
+msgid "missing equal sign after option '%s'"
+msgstr ""
+
+#: src/confuse.c:1177
+#, c-format
+msgid "missing opening brace for section '%s'"
+msgstr ""
+
+#: src/confuse.c:1202
+#, c-format
+msgid "missing title for section '%s'"
+msgstr ""
+
+#: src/confuse.c:1214
+#, c-format
+msgid "missing parenthesis for function '%s'"
+msgstr ""
+
+#: src/confuse.c:1238 src/confuse.c:1253
+#, c-format
+msgid "syntax error in call of function '%s'"
+msgstr ""
+
+#: src/confuse.c:1259
+#, c-format
+msgid "Internal error in cfg_parse_internal(), unknown state %d"
+msgstr ""
+
+#: src/confuse.c:1596
+msgid "wrong number of arguments to cfg_include()"
+msgstr ""
+
+#: src/lexer.l:151
+#, c-format
+msgid "invalid octal number '%s'"
+msgstr ""
+
+#: src/lexer.l:157
+#, c-format
+msgid "bad escape sequence '%s'"
+msgstr ""
+
+#: src/lexer.l:229
+msgid "unterminated string constant"
+msgstr ""
+
+#: src/lexer.l:297
+msgid "includes nested too deeply"
+msgstr ""
