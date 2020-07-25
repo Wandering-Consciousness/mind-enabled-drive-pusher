@@ -1,6 +1,4 @@
-#
 #!/bin/bash       
-
 
 # Check if XCode command line tools are installed, if not install them via prompt 
 XCodeTools(){
@@ -58,12 +56,14 @@ installQNG(){
 brew update && brew install libomp && brew install llvm 
 
 # setup LLVM variables in order to not have problems with OpenMP
-export CC="/usr/local/opt/llvm/bin/clang -fopenmp"
-export CXX="/usr/local/opt/llvm/bin/clang++ -fopenmp"
-export CFLAGS="-O3 -mtune=native"
-export CXXFLAGS="-O3 -mtune=native"
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export CC="/usr/local/opt/llvm/bin/clang -fopenmp -mmacosx-version-min=10.15 -fdeclspec"
+export CXX="/usr/local/opt/llvm/bin/clang++ -fopenmp -mmacosx-version-min=10.15 -fdeclspec"
+#export CFLAGS="-O3 -mtune=native -mmacosx-version-min=10.15"
+#export CXXFLAGS="-O3 -mtune=native -mmacosx-version-min=10.15"
+export CFLAGS="-mtune=native -mmacosx-version-min=10.15 -fdeclspec"
+export CXXFLAGS="-mtune=native -mmacosx-version-min=10.15 -fdeclspec"
+export LDFLAGS="-L/usr/local/opt/llvm/lib -mmacosx-version-min=10.15 -fdeclspec"
+export CPPFLAGS="-I/usr/local/opt/llvm/include -mmacosx-version-min=10.15 -fdeclspec"
 export CPATH="/usr/local/include:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
 
 cd libqwqng-1.4
