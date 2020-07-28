@@ -21,8 +21,8 @@ namespace medrip
         public void SendEntropy(List<byte> entropyBinary)
         {
             string entropStr = Convert.ToBase64String(entropyBinary.ToArray());
-            entropStr = $"<entropy>{entropStr}</entropy>";
-            var ttl = new TimeSpan(3, 0, 0); // hrs|min|sec
+            entropStr = $"<e>{entropStr}</e>";
+            var ttl = new TimeSpan(0, 0, 9); // hrs|min|sec
             queue.SendMessage(entropStr, timeToLive: ttl);
             Console.WriteLine($"{DateTime.Now.ToString()} sent {entropStr.Length} bytes");
         }
